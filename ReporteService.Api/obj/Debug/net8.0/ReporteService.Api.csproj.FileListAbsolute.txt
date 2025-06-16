@@ -1,0 +1,7 @@
+C:\Users\Xrixer\Music\ReporteMicroservice\ReporteService.Api\obj\Debug\net8.0\ReporteService.Api.csproj.AssemblyReference.cache
+C:\Users\Xrixer\Music\ReporteMicroservice\ReporteService.Api\obj\Debug\net8.0\ReporteService.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xrixer\Music\ReporteMicroservice\ReporteService.Api\obj\Debug\net8.0\ReporteService.Api.AssemblyInfoInputs.cache
+C:\Users\Xrixer\Music\ReporteMicroservice\ReporteService.Api\obj\Debug\net8.0\ReporteService.Api.AssemblyInfo.cs
+C:\Users\Xrixer\Music\ReporteMicroservice\ReporteService.Api\obj\Debug\net8.0\ReporteService.Api.csproj.CoreCompileInputs.cache
+C:\Users\Xrixer\Music\ReporteMicroservice\ReporteService.Api\obj\Debug\net8.0\ReporteService.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Xrixer\Music\ReporteMicroservice\ReporteService.Api\obj\Debug\net8.0\ReporteService.Api.sourcelink.json
