@@ -11,5 +11,7 @@ namespace ReporteService.Application.Request
         public string NuevoEstado { get; set; } = string.Empty;
         public string IdUsuario { get; set; } = string.Empty;
 
+        public string IdSubasta { get; set; } = string.Empty;
+
     }
 }

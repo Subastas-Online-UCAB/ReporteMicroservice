@@ -26,7 +26,9 @@ namespace ReporteService.Application.Servicios
                 Titulo = request.Titulo,
                 Descripcion = request.Descripcion,
                 Estado = "Pendiente",
+                FechaCreacion = request.FechaCreacion,
                 IdUsuario = request.IdUsuario,
+                IdSubasta = request.IdSubasta,  
             };
 
             // 1. Persistencia en base de datos principal (PostgreSQL)
@@ -39,7 +41,9 @@ namespace ReporteService.Application.Servicios
                 Titulo = reporte.Titulo,
                 Descripcion = reporte.Descripcion,
                 Estado = "Pendiente",
+                FechaCreacion = reporte.FechaCreacion,
                 IdUsuario = reporte.IdUsuario,
+                IdSubasta = reporte.IdSubasta,  
             };
 
             await _publisher.PublicarReporteCreado(eventoCreado);

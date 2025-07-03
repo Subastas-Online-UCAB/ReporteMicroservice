@@ -28,7 +28,9 @@ namespace ReporteService.Application.Handlers
                 Titulo = reporte.Titulo,
                 Descripcion = reporte.Descripcion,
                 Estado = reporte.Estado,
+                FechaCreacion = reporte.FechaCreacion,
                 IdUsuario = reporte.IdUsuario,
+                IdSubasta = reporte.IdSubasta,
             };
         }
 

@@ -19,9 +19,16 @@ namespace ReporteService.Infrastructure.MongoDB.Documents
         [BsonElement("estado")]
         public string Estado { get; set; }
 
+        [BsonElement("fechacreacion")]
+        public DateTime FechaCreacion { get; set; }
+
         [BsonElement("idUsuario")]
         [BsonRepresentation(BsonType.String)]
         public Guid IdUsuario { get; set; }
+
+        [BsonElement("idSubasta")]
+        [BsonRepresentation(BsonType.String)]
+        public Guid IdSubasta { get; set; }
 
     }
 }

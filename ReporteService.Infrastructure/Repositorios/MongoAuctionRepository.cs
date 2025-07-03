@@ -26,7 +26,9 @@ namespace ReporteService.Infraestructura.Repositorios
                 Titulo = doc.Titulo,
                 Descripcion = doc.Descripcion,
                 Estado = doc.Estado,
+                FechaCreacion = doc.FechaCreacion,
                 IdUsuario = doc.IdUsuario,
+                IdSubasta = doc.IdSubasta,
             }).ToList();
 
         }

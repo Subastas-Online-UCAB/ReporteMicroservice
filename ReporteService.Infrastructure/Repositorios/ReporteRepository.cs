@@ -93,7 +93,9 @@ namespace ReporteService.Infrastructure.Repositorios
                 Titulo = doc.Titulo,
                 Descripcion = doc.Descripcion,
                 Estado = doc.Estado,
+                FechaCreacion = doc.FechaCreacion,  
                 IdUsuario = doc.IdUsuario,
+                IdSubasta = doc.IdSubasta,  
             };
         }
 

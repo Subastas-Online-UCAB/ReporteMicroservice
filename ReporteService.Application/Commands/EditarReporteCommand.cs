@@ -11,8 +11,9 @@ namespace ReporteService.Application.Commands
     public record EditarReporteCommand(
         Guid ReporteId,
         Guid UsuarioId,
+        Guid SubastaId,
         string Titulo,
         string Descripcion,
-        string Estado
+        string Estado,
     ) : IRequest<MessageResponse>;
 }

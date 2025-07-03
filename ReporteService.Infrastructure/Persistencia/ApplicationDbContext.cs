@@ -42,7 +42,13 @@ namespace UsuarioServicio.Infrastructure.Persistencia
                     .IsRequired()
                     .HasMaxLength(50);
 
+                entity.Property(s => s.FechaCreacion)
+                    .IsRequired();
+
                 entity.Property(s => s.IdUsuario)
+                    .IsRequired();
+
+                entity.Property(s => s.IdSubasta)
                     .IsRequired();
 
             });

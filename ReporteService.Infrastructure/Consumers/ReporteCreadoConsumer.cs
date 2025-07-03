@@ -25,7 +25,9 @@ namespace ReporteService.Infrastructure.Consumers
                 Titulo = mensaje.Titulo,
                 Descripcion = mensaje.Descripcion,
                 Estado = mensaje.Estado,
+                FechaCreacion = mensaje.FechaCreacion,
                 IdUsuario = mensaje.IdUsuario,
+                IdSubasta = mensaje.IdSubasta, 
             };
 
             await _context.Reportes.InsertOneAsync(documento);
