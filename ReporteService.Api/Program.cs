@@ -1,17 +1,19 @@
 ﻿using MediatR;
 using ReporteService.Application.Commands;
-using ReporteService.Domain.Repositorios;
+using ReporteService.Dominio.Repositorios;
 using ReporteService.Infrastructure.Repositorios;
 using Microsoft.EntityFrameworkCore;
 using UsuarioServicio.Infrastructure.Persistencia;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using MassTransit;
+using ReporteService.Application.Sagas;
 using ReporteService.Infrastructure.Mongo;
 using ReporteService.Infrastructure.MongoDB;
 using ReporteService.Infrastructure.Consumers;
-using ReporteService.Domain.Interfaces;
+using ReporteService.Dominio.Interfaces;
 using ReporteService.Infrastructure.EventPublishers;
-
+using System.Reflection;
+using ReporteService.Infraestructura.Repositorios;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -89,6 +91,16 @@ builder.Services.AddMassTransit(x =>
 {
     // 1. Registrar consumidores
     x.AddConsumer<ReporteCreadoConsumer>();
+    x.AddConsumer<ReporteStateChangedConsumer>(); // 👈 Nuevo consumer agregado
+
+    // 2. Registrar la saga
+    x.AddSagaStateMachine<ReporteStateMachine, ReporteState>()
+        .MongoDbRepository(r =>
+        {
+            r.Connection = builder.Configuration["MongoSettings:ConnectionString"];
+            r.DatabaseName = builder.Configuration["MongoSettings:DatabaseName"];
+            r.CollectionName = "reporte_sagas"; // opcional
+        });
 
 
     // 3. Configurar RabbitMQ
@@ -96,19 +108,26 @@ builder.Services.AddMassTransit(x =>
     {
         cfg.Host("localhost", "/", h => { });
 
-        // Consumer normal
+        // Consumer para evento SubastaCreada
         cfg.ReceiveEndpoint("reporte-creado-event", e =>
         {
             e.ConfigureConsumer<ReporteCreadoConsumer>(context);
         });
 
-        // Endpoint para la saga (auto generado por MassTransit)
+        // ✅ Nuevo endpoint para el cambio de estado
+        cfg.ReceiveEndpoint("reporte-state-changed-event", e =>
+        {
+            e.ConfigureConsumer<ReporteStateChangedConsumer>(context);
+        });
+
+        // Endpoint para la saga
         cfg.ConfigureEndpoints(context);
     });
 });
 
 builder.Services.AddScoped<IPublicadorReporteEventos, PublicadorReporteEventos>();
 builder.Services.AddSingleton<IReporteMongoContext, MongoDbContext>();
+builder.Services.AddScoped<IMongoReporteRepository, MongoAuctionRepository>();
 
 
 var app = builder.Build();

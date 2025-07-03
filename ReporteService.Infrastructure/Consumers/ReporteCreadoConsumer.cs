@@ -1,12 +1,12 @@
 ﻿using MassTransit;
-using ReporteService.Domain.Events;
+using ReporteService.Dominio.Eventos;
 using ReporteService.Infrastructure.Mongo;
 using ReporteService.Infrastructure.MongoDB;
 using ReporteService.Infrastructure.MongoDB.Documents;
 
 namespace ReporteService.Infrastructure.Consumers
 {
-    public class ReporteCreadoConsumer : IConsumer<ReporteCreadoEvent>
+    public class ReporteCreadoConsumer : IConsumer<ReporteCreadoEvento>
     {
         private readonly IReporteMongoContext _context;
 
@@ -15,7 +15,7 @@ namespace ReporteService.Infrastructure.Consumers
             _context = context;
         }
 
-        public async Task Consume(ConsumeContext<ReporteCreadoEvent> context)
+        public async Task Consume(ConsumeContext<ReporteCreadoEvento> context)
         {
             var mensaje = context.Message;
 

@@ -2974,7 +2974,7 @@
           "MediatR": "12.5.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "MongoDB.Bson": "3.4.0",
-          "ReporteService.Domain": "1.0.0"
+          "ReporteService.Dominio": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ReporteService.Application.dll": {}
@@ -2983,14 +2983,14 @@
           "bin/placeholder/ReporteService.Application.dll": {}
         }
       },
-      "ReporteService.Domain/1.0.0": {
+      "ReporteService.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
-          "bin/placeholder/ReporteService.Domain.dll": {}
+          "bin/placeholder/ReporteService.Dominio.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ReporteService.Domain.dll": {}
+          "bin/placeholder/ReporteService.Dominio.dll": {}
         }
       },
       "ReporteService.Infrastructure/1.0.0": {
@@ -3001,12 +3001,12 @@
           "MassTransit": "8.4.1",
           "MassTransit.MongoDb": "8.4.0",
           "MassTransit.RabbitMQ": "8.4.0",
-          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
           "MongoDB.Driver": "3.4.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "ReporteService.Application": "1.0.0",
-          "ReporteService.Domain": "1.0.0"
+          "ReporteService.Dominio": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ReporteService.Infrastructure.dll": {}
@@ -9046,10 +9046,10 @@
       "path": "../ReporteService.Application/ReporteService.Application.csproj",
       "msbuildProject": "../ReporteService.Application/ReporteService.Application.csproj"
     },
-    "ReporteService.Domain/1.0.0": {
+    "ReporteService.Dominio/1.0.0": {
       "type": "project",
-      "path": "../ReporteService.Domain/ReporteService.Domain.csproj",
-      "msbuildProject": "../ReporteService.Domain/ReporteService.Domain.csproj"
+      "path": "../ReporteService.Domain/ReporteService.Dominio.csproj",
+      "msbuildProject": "../ReporteService.Domain/ReporteService.Dominio.csproj"
     },
     "ReporteService.Infrastructure/1.0.0": {
       "type": "project",
@@ -9065,7 +9065,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 9.0.4",
       "MongoDB.Driver >= 3.4.0",
       "ReporteService.Application >= 1.0.0",
-      "ReporteService.Domain >= 1.0.0",
+      "ReporteService.Dominio >= 1.0.0",
       "ReporteService.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 8.1.1",
       "xunit >= 2.9.3",
@@ -9079,11 +9079,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Api\\ReporteService.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Api\\ReporteService.Api.csproj",
       "projectName": "ReporteService.Api",
-      "projectPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Api\\ReporteService.Api.csproj",
+      "projectPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Api\\ReporteService.Api.csproj",
       "packagesPath": "C:\\Users\\Xrixer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Api\\obj\\",
+      "outputPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -9105,14 +9105,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Application\\ReporteService.Application.csproj": {
-              "projectPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Application\\ReporteService.Application.csproj"
+            "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Application\\ReporteService.Application.csproj": {
+              "projectPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Application\\ReporteService.Application.csproj"
             },
-            "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Domain.csproj": {
-              "projectPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Domain.csproj"
+            "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Dominio.csproj": {
+              "projectPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Dominio.csproj"
             },
-            "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Infrastructure\\ReporteService.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Infrastructure\\ReporteService.Infrastructure.csproj"
+            "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Infrastructure\\ReporteService.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Infrastructure\\ReporteService.Infrastructure.csproj"
             }
           }
         }

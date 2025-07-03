@@ -22,7 +22,7 @@ namespace ReporteService.Infrastructure.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("ReporteService.Domain.Entidades.Reporte", b =>
+            modelBuilder.Entity("ReporteService.Dominio.Entidades.Reporte", b =>
                 {
                     b.Property<Guid>("IdReporte")
                         .ValueGeneratedOnAdd()
@@ -30,8 +30,8 @@ namespace ReporteService.Infrastructure.Migrations
 
                     b.Property<string>("Descripcion")
                         .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("character varying(250)");
+                        .HasMaxLength(500)
+                        .HasColumnType("character varying(500)");
 
                     b.Property<string>("Estado")
                         .IsRequired()

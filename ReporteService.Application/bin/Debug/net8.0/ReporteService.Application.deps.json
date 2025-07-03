@@ -14,7 +14,7 @@
           "MediatR": "12.5.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "MongoDB.Bson": "3.4.0",
-          "ReporteService.Domain": "1.0.0"
+          "ReporteService.Dominio": "1.0.0"
         },
         "runtime": {
           "ReporteService.Application.dll": {}
@@ -222,9 +222,9 @@
       "System.Diagnostics.DiagnosticSource/8.0.0": {},
       "System.Memory/4.5.5": {},
       "System.Runtime.CompilerServices.Unsafe/5.0.0": {},
-      "ReporteService.Domain/1.0.0": {
+      "ReporteService.Dominio/1.0.0": {
         "runtime": {
-          "ReporteService.Domain.dll": {
+          "ReporteService.Dominio.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -385,7 +385,7 @@
       "path": "system.runtime.compilerservices.unsafe/5.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
     },
-    "ReporteService.Domain/1.0.0": {
+    "ReporteService.Dominio/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

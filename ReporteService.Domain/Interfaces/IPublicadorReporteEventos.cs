@@ -1,16 +1,15 @@
-﻿using ReporteService.Domain.Events;
+﻿using ReporteService.Dominio.Eventos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReporteService.Domain.Interfaces
+namespace ReporteService.Dominio.Interfaces
 {
     public interface IPublicadorReporteEventos
     {
-        Task PublicarReporteCreado(ReporteCreadoEvent evento);
-        Task PublicarReporteEditado(ReporteEditadoEvent evento);
+        Task PublicarReporteCreado(ReporteCreadoEvento evento);
 
     }
 }

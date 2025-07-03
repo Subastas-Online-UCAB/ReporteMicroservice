@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LGF3zw48JS0=",
+  "dgSpecHash": "/PYIZGKzTaw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Api\\ReporteService.Api.csproj",
+  "projectFilePath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Api\\ReporteService.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Xrixer\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Xrixer\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

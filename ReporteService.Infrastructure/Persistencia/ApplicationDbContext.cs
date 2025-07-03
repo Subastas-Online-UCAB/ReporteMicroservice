@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using ReporteService.Domain.Entidades;
+using ReporteService.Dominio.Entidades;
 
 namespace UsuarioServicio.Infrastructure.Persistencia
 {
@@ -36,7 +36,7 @@ namespace UsuarioServicio.Infrastructure.Persistencia
 
                 entity.Property(s => s.Descripcion)
                     .IsRequired()
-                    .HasMaxLength(250);
+                    .HasMaxLength(500);
 
                 entity.Property(s => s.Estado)
                     .IsRequired()

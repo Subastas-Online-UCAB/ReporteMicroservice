@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ReporteService.Api</name>
+    </assembly>
+    <members>
+        <member name="T:ReporteService.API.Controllers.ReportesController">
+            <summary>
+            Controlador para gestionar operaciones relacionadas con reportes.
+            </summary>
+        </member>
+        <member name="M:ReporteService.API.Controllers.ReportesController.CrearReporte(ReporteService.Application.Commands.CrearReporteCommand)">
+            <summary>
+            Crea un nuevo reporte.
+            </summary>
+            <param name="command">Datos del reporte a crear.</param>
+            <returns>ID del reporte creado.</returns>
+            <response code="201">Reporte creado exitosamente.</response>
+            <response code="400">Datos inválidos o incompletos.</response>
+        </member>
+        <member name="M:ReporteService.API.Controllers.ReportesController.GetById(System.Guid)">
+            <summary>
+            Obtiene un reporte por su ID (placeholder temporal).
+            </summary>
+            <param name="id">ID del reporte.</param>
+            <returns>Objeto con el ID y mensaje de confirmación.</returns>
+            <response code="200">Reporte encontrado (placeholder).</response>
+        </member>
+        <member name="M:ReporteService.API.Controllers.ReportesController.ObtenerPorId(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Consulta un reporte por su ID.
+            </summary>
+            <param name="id">ID del reporte a consultar.</param>
+            <param name="cancellationToken">Token de cancelación.</param>
+            <returns>Detalles del reporte si existe.</returns>
+            <response code="200">Reporte encontrado.</response>
+            <response code="404">Reporte no encontrado.</response>
+        </member>
+        <member name="M:ReporteService.API.Controllers.ReportesController.GetAll">
+            <summary>
+            Obtiene la lista de todos los reportes.
+            </summary>
+            <remarks>
+            Retorna reportes registradas desde la base de datos de lectura (MongoDB).
+            No requiere parámetros de entrada.
+            </remarks>
+            <returns>Lista de objetos <see cref="T:ReporteService.Dominio.Entidades.Reporte"/>.</returns>
+            <response code="200">Lista de Reportes obtenida exitosamente.</response>
+            <response code="500">Error interno del servidor.</response>
+        </member>
+    </members>
+</doc>

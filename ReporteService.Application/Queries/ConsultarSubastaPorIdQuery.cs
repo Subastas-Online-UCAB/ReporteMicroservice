@@ -1,6 +1,6 @@
 ﻿using MediatR;
 using ReporteService.Application.DTO;
-using ReporteService.Domain.Entidades;
+using ReporteService.Dominio.Entidades;
 
 
 namespace ReporteService.Application.Queries

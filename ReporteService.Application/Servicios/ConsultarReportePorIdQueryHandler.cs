@@ -1,8 +1,8 @@
 ﻿using MediatR;
 using ReporteService.Application.DTO;
 using ReporteService.Application.Queries;
-using ReporteService.Domain.Entidades;
-using ReporteService.Domain.Repositorios;
+using ReporteService.Dominio.Entidades;
+using ReporteService.Dominio.Repositorios;
 
 namespace ReporteService.Application.Handlers
 {

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ReporteService.Domain.Entidades;
+using ReporteService.Dominio.Entidades;
 
-namespace ReporteService.Domain.Repositorios
+namespace ReporteService.Dominio.Repositorios
 {
     public interface IReporteRepository
     {

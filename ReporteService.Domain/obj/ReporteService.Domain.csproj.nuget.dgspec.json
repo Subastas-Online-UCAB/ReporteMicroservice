@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Domain.csproj": {}
+    "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Domain.csproj": {
+    "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Domain.csproj",
         "projectName": "ReporteService.Domain",
-        "projectPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Domain.csproj",
+        "projectPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Domain.csproj",
         "packagesPath": "C:\\Users\\Xrixer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

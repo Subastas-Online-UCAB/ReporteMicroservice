@@ -12,8 +12,8 @@
     <PackageReference Include="MassTransit" Version="8.4.1" />
     <PackageReference Include="MassTransit.MongoDb" Version="8.4.0" />
     <PackageReference Include="MassTransit.RabbitMQ" Version="8.4.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.4">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
@@ -28,7 +28,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ReporteService.Application\ReporteService.Application.csproj" />
-    <ProjectReference Include="..\ReporteService.Domain\ReporteService.Domain.csproj" />
+    <ProjectReference Include="..\ReporteService.Domain\ReporteService.Dominio.csproj" />
   </ItemGroup>
 
 </Project>

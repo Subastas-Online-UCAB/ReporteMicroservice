@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Api\\ReporteService.Api.csproj": {}
+    "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Api\\ReporteService.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Api\\ReporteService.Api.csproj": {
+    "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Api\\ReporteService.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Api\\ReporteService.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Api\\ReporteService.Api.csproj",
         "projectName": "ReporteService.Api",
-        "projectPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Api\\ReporteService.Api.csproj",
+        "projectPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Api\\ReporteService.Api.csproj",
         "packagesPath": "C:\\Users\\Xrixer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Api\\obj\\",
+        "outputPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,14 +33,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Application\\ReporteService.Application.csproj": {
-                "projectPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Application\\ReporteService.Application.csproj"
+              "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Application\\ReporteService.Application.csproj": {
+                "projectPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Application\\ReporteService.Application.csproj"
               },
-              "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Domain.csproj": {
-                "projectPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Domain.csproj"
+              "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Dominio.csproj": {
+                "projectPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Dominio.csproj"
               },
-              "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Infrastructure\\ReporteService.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Infrastructure\\ReporteService.Infrastructure.csproj"
+              "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Infrastructure\\ReporteService.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Infrastructure\\ReporteService.Infrastructure.csproj"
               }
             }
           }
@@ -121,14 +121,14 @@
         }
       }
     },
-    "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Application\\ReporteService.Application.csproj": {
+    "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Application\\ReporteService.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Application\\ReporteService.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Application\\ReporteService.Application.csproj",
         "projectName": "ReporteService.Application",
-        "projectPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Application\\ReporteService.Application.csproj",
+        "projectPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Application\\ReporteService.Application.csproj",
         "packagesPath": "C:\\Users\\Xrixer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Application\\obj\\",
+        "outputPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -150,8 +150,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Domain.csproj": {
-                "projectPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Domain.csproj"
+              "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Dominio.csproj": {
+                "projectPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Dominio.csproj"
               }
             }
           }
@@ -217,14 +217,14 @@
         }
       }
     },
-    "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Domain.csproj": {
+    "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Domain.csproj",
-        "projectName": "ReporteService.Domain",
-        "projectPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Dominio.csproj",
+        "projectName": "ReporteService.Dominio",
+        "projectPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Dominio.csproj",
         "packagesPath": "C:\\Users\\Xrixer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -283,14 +283,14 @@
         }
       }
     },
-    "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Infrastructure\\ReporteService.Infrastructure.csproj": {
+    "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Infrastructure\\ReporteService.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Infrastructure\\ReporteService.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Infrastructure\\ReporteService.Infrastructure.csproj",
         "projectName": "ReporteService.Infrastructure",
-        "projectPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Infrastructure\\ReporteService.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Infrastructure\\ReporteService.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Xrixer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -312,11 +312,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Application\\ReporteService.Application.csproj": {
-                "projectPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Application\\ReporteService.Application.csproj"
+              "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Application\\ReporteService.Application.csproj": {
+                "projectPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Application\\ReporteService.Application.csproj"
               },
-              "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Domain.csproj": {
-                "projectPath": "C:\\Users\\Xrixer\\Music\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Domain.csproj"
+              "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Dominio.csproj": {
+                "projectPath": "C:\\Users\\Xrixer\\Documents\\GitHub\\ReporteMicroservice\\ReporteService.Domain\\ReporteService.Dominio.csproj"
               }
             }
           }
@@ -355,13 +355,13 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",

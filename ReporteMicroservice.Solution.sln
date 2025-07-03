@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReporteService.Api", "Repor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReporteService.Application", "ReporteService.Application\ReporteService.Application.csproj", "{55599F34-6472-AB68-5682-9E3DC390E325}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReporteService.Domain", "ReporteService.Domain\ReporteService.Domain.csproj", "{6679497D-FCBC-162D-508A-5592557CFC74}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReporteService.Dominio", "ReporteService.Domain\ReporteService.Dominio.csproj", "{6679497D-FCBC-162D-508A-5592557CFC74}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReporteService.Infrastructure", "ReporteService.Infrastructure\ReporteService.Infrastructure.csproj", "{C9E04393-60BE-DD02-D462-B8D805EDDD28}"
 EndProject

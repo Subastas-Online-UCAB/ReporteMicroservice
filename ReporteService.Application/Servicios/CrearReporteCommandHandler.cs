@@ -1,9 +1,9 @@
 ﻿using MediatR;
 using ReporteService.Application.Commands;
-using ReporteService.Domain.Entidades;
-using ReporteService.Domain.Repositorios;
-using ReporteService.Domain.Interfaces;
-using ReporteService.Domain.Events;
+using ReporteService.Dominio.Entidades;
+using ReporteService.Dominio.Repositorios;
+using ReporteService.Dominio.Interfaces;
+using ReporteService.Dominio.Eventos;
 
 namespace ReporteService.Application.Servicios
 {
@@ -33,7 +33,7 @@ namespace ReporteService.Application.Servicios
             await _repository.CrearAsync(reporte, cancellationToken);
 
             // 2. Publicar evento general (por ejemplo, para vistas o proyecciones)
-            var eventoCreado = new ReporteCreadoEvent
+            var eventoCreado = new ReporteCreadoEvento
             {
                 Id = reporte.IdReporte,
                 Titulo = reporte.Titulo,

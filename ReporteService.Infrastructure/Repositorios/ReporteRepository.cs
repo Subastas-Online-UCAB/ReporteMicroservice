@@ -1,14 +1,14 @@
-﻿using ReporteService.Domain.Repositorios;
+﻿using ReporteService.Dominio.Repositorios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UsuarioServicio.Infrastructure.Persistencia;
-using ReporteService.Domain.Entidades;
+using ReporteService.Dominio.Entidades;
 using Microsoft.EntityFrameworkCore;
 using MongoDB.Driver;
-using ReporteService.Domain.Events;
+using ReporteService.Dominio.Eventos;
 using ReporteService.Infrastructure.MongoDB.Documents;
 using MassTransit;
 using ReporteService.Infrastructure.Mongo;
