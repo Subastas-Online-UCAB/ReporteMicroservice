@@ -17,6 +17,8 @@ namespace ReporteService.Dominio.Repositorios
 
         Task<Reporte?> ObtenerReportePorIdAsync(Guid id, CancellationToken cancellationToken);
 
+        Task EliminarReporteAsync(Guid idReporte, Guid idUsuario, CancellationToken cancellationToken);
+
 
 
     }

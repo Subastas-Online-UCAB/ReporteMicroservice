@@ -19,7 +19,10 @@ namespace ReporteService.Infrastructure.Migrations
                     Titulo = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
                     Descripcion = table.Column<string>(type: "character varying(500)", maxLength: 500, nullable: false),
                     Estado = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
-                    IdUsuario = table.Column<Guid>(type: "uuid", nullable: false)
+                    FechaCreacion = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    ImagenRuta = table.Column<string>(type: "character varying(250)", maxLength: 250, nullable: false),
+                    IdUsuario = table.Column<Guid>(type: "uuid", nullable: false),
+                    IdSubasta = table.Column<Guid>(type: "uuid", nullable: false)
                 },
                 constraints: table =>
                 {

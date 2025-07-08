@@ -5,7 +5,7 @@ using ReporteService.Dominio.Repositorios;
 using ReporteService.Infrastructure.MongoDB;
 using ReporteService.Infrastructure.MongoDB.Documents;
 
-namespace ReporteService.Infraestructura.Repositorios
+namespace ReporteService.Infrastructure.Repositorios
 {
     public class MongoAuctionRepository : IMongoReporteRepository
     {
@@ -27,6 +27,7 @@ namespace ReporteService.Infraestructura.Repositorios
                 Descripcion = doc.Descripcion,
                 Estado = doc.Estado,
                 FechaCreacion = doc.FechaCreacion,
+                ImagenRuta = doc.ImagenRuta,
                 IdUsuario = doc.IdUsuario,
                 IdSubasta = doc.IdSubasta,
             }).ToList();

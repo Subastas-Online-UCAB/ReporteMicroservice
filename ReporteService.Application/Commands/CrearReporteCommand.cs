@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ namespace ReporteService.Application.Commands
         public string Estado { get; set; } = "Pendiente";
 
         public DateTime FechaCreacion { get; set; }
+        public IFormFile Imagen { get; set; }
         public Guid IdUsuario { get; set; }
 
         public Guid IdSubasta { get; set; }

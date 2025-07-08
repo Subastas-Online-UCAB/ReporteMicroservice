@@ -75,6 +75,10 @@
               "target": "Package",
               "version": "[11.1.0, )"
             },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
             "MongoDB.Bson": {
               "target": "Package",
               "version": "[3.4.0, )"

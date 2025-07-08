@@ -79,6 +79,14 @@ namespace ReporteService.Infrastructure.Repositorios
 
         }
 
+        public async Task EliminarReporteAsync(Guid idReporte, Guid idUsuario, CancellationToken cancellationToken)
+        {
+            var producto = await _context.Reportes.FirstOrDefaultAsync(s => s.IdReporte == idReporte, cancellationToken);
+            if (producto is null)
+                throw new Exception("Reporte no encontrado.");
+
+        }
+
         public async Task<Reporte?> ObtenerReportePorIdAsync(Guid id, CancellationToken cancellationToken)
         {
             var doc = await _mongoContext.Reportes
@@ -93,7 +101,8 @@ namespace ReporteService.Infrastructure.Repositorios
                 Titulo = doc.Titulo,
                 Descripcion = doc.Descripcion,
                 Estado = doc.Estado,
-                FechaCreacion = doc.FechaCreacion,  
+                FechaCreacion = doc.FechaCreacion,
+                ImagenRuta = doc.ImagenRuta,
                 IdUsuario = doc.IdUsuario,
                 IdSubasta = doc.IdSubasta,  
             };

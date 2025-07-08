@@ -13,6 +13,7 @@ namespace ReporteService.Application.DTO
         public string Descripcion { get; set; } = null!;
         public string Estado { get; set; } = null!;
         public DateTime FechaCreacion { get; set; }
+        public string ImagenRuta { get; set; }
         public Guid IdUsuario { get; set; }
         public Guid IdSubasta { get; set; }
     }

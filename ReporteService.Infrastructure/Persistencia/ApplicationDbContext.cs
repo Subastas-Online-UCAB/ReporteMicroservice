@@ -45,6 +45,10 @@ namespace UsuarioServicio.Infrastructure.Persistencia
                 entity.Property(s => s.FechaCreacion)
                     .IsRequired();
 
+                entity.Property(s => s.ImagenRuta)
+                    .IsRequired()
+                    .HasMaxLength(250);
+
                 entity.Property(s => s.IdUsuario)
                     .IsRequired();
 

@@ -5,15 +5,20 @@ using System.Text;
 using System.Threading.Tasks;
 using MediatR;
 using ReporteService.Application.Comun;
+using Microsoft.AspNetCore.Http;
+using System.Security.Cryptography.X509Certificates;
 
 namespace ReporteService.Application.Commands
 {
-    public record EditarReporteCommand(
-        Guid ReporteId,
-        Guid UsuarioId,
-        Guid SubastaId,
-        string Titulo,
-        string Descripcion,
-        string Estado,
-    ) : IRequest<MessageResponse>;
+    public class EditarReporteCommand : IRequest<MessageResponse>
+    {
+        public Guid ReporteId { get; set; }
+        public string Titulo { get; set; }
+        public string Descripcion { get; set; }
+        public string Estado { get; set; }
+        public IFormFile Imagen { get; set; }
+        public Guid UsuarioId { get; set; }
+        public Guid SubastaId { get; set; }
+
+    }
 }

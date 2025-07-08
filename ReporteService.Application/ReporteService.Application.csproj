@@ -12,6 +12,7 @@
     <PackageReference Include="MassTransit" Version="8.4.1" />
     <PackageReference Include="MediatR" Version="12.5.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.0" />
     <PackageReference Include="MongoDB.Bson" Version="3.4.0" />
   </ItemGroup>
 

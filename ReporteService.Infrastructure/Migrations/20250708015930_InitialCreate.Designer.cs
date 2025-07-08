@@ -12,7 +12,7 @@ using UsuarioServicio.Infrastructure.Persistencia;
 namespace ReporteService.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250703001246_InitialCreate")]
+    [Migration("20250708015930_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -41,8 +41,19 @@ namespace ReporteService.Infrastructure.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("character varying(50)");
 
+                    b.Property<DateTime>("FechaCreacion")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("IdSubasta")
+                        .HasColumnType("uuid");
+
                     b.Property<Guid>("IdUsuario")
                         .HasColumnType("uuid");
+
+                    b.Property<string>("ImagenRuta")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("character varying(250)");
 
                     b.Property<string>("Titulo")
                         .IsRequired()

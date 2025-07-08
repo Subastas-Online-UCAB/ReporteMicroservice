@@ -4,6 +4,7 @@ using ReporteService.Dominio.Entidades;
 using ReporteService.Dominio.Repositorios;
 using ReporteService.Dominio.Interfaces;
 using ReporteService.Dominio.Eventos;
+using ReporteService.Application.Servicios;
 
 namespace ReporteService.Application.Servicios
 {
@@ -11,15 +12,20 @@ namespace ReporteService.Application.Servicios
     {
         private readonly IReporteRepository _repository;
         private readonly IPublicadorReporteEventos _publisher;
+        private readonly ImagenService _imagenService;
 
-        public CrearReporteCommandHandler(IReporteRepository repository, IPublicadorReporteEventos publisher)
+        public CrearReporteCommandHandler(IReporteRepository repository, IPublicadorReporteEventos publisher, ImagenService imagenService)
         {
             _repository = repository;
             _publisher = publisher;
+            _imagenService = imagenService;
         }
 
         public async Task<Guid> Handle(CrearReporteCommand request, CancellationToken cancellationToken)
         {
+            // 1. Guardar la imagen en el sistema de archivos
+            string rutaImagen = await _imagenService.GuardarImagen(request.Imagen, Guid.NewGuid());
+
             var reporte = new Reporte
             {
                 IdReporte = Guid.NewGuid(),
@@ -27,6 +33,7 @@ namespace ReporteService.Application.Servicios
                 Descripcion = request.Descripcion,
                 Estado = "Pendiente",
                 FechaCreacion = request.FechaCreacion,
+                ImagenRuta = rutaImagen,
                 IdUsuario = request.IdUsuario,
                 IdSubasta = request.IdSubasta,  
             };
@@ -42,6 +49,7 @@ namespace ReporteService.Application.Servicios
                 Descripcion = reporte.Descripcion,
                 Estado = "Pendiente",
                 FechaCreacion = reporte.FechaCreacion,
+                ImagenRuta = reporte.ImagenRuta,
                 IdUsuario = reporte.IdUsuario,
                 IdSubasta = reporte.IdSubasta,  
             };

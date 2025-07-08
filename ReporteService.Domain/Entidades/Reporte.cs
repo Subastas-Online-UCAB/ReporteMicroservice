@@ -13,16 +13,18 @@ namespace ReporteService.Dominio.Entidades
         public string Descripcion { get; set; }
         public string Estado { get; set; }
         public DateTime FechaCreacion { get; set; }
+        public string ImagenRuta { get; set; }
         public Guid IdUsuario { get; set; }
         public Guid IdSubasta { get; set; }
 
 
 
-        public void Editar(string titulo, string descripcion, string estado)
+        public void Editar(string titulo, string descripcion, string estado, string imagenRuta)
         {
             Titulo = titulo;
             Descripcion = descripcion;
             Estado = estado;
+            ImagenRuta = imagenRuta;
 
         }
     }

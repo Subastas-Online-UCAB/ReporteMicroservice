@@ -13,6 +13,8 @@ namespace ReporteService.Dominio.Eventos
         public string Descripcion { get; set; }
         public string Estado { get; set; }
         public DateTime FechaCreacion { get; set; }
+        public string ImagenRuta { get; set; }
+
         public Guid IdUsuario { get; set; }
         public Guid IdSubasta { get; set; }
     }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MassTransit;
+using ReporteService.Domain.Eventos;
 using ReporteService.Dominio.Eventos;
 using ReporteService.Dominio.Interfaces;
 
@@ -19,6 +20,11 @@ namespace ReporteService.Infrastructure.EventPublishers
         }
 
         public async Task PublicarReporteCreado(ReporteCreadoEvento evento)
+        {
+            await _publishEndpoint.Publish(evento);
+        }
+
+        public async Task PublicarReporteEditadoEvento(ReporteEditadoEvento evento)
         {
             await _publishEndpoint.Publish(evento);
         }

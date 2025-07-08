@@ -13,7 +13,8 @@ using ReporteService.Infrastructure.Consumers;
 using ReporteService.Dominio.Interfaces;
 using ReporteService.Infrastructure.EventPublishers;
 using System.Reflection;
-using ReporteService.Infraestructura.Repositorios;
+using ReporteService.Application.Servicios;
+using SubastaService.Infraestructura.Consumidor;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,6 +24,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<ImagenService>();
+builder.Services.AddTransient<IRequestHandler<CrearReporteCommand, Guid>, CrearReporteCommandHandler>();
+builder.Services.AddScoped<ReporteEditadoConsumidor>();
+
 
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -92,6 +97,7 @@ builder.Services.AddMassTransit(x =>
     // 1. Registrar consumidores
     x.AddConsumer<ReporteCreadoConsumer>();
     x.AddConsumer<ReporteStateChangedConsumer>(); // 👈 Nuevo consumer agregado
+    x.AddConsumer<ReporteEditadoConsumidor>();
 
     // 2. Registrar la saga
     x.AddSagaStateMachine<ReporteStateMachine, ReporteState>()
@@ -118,6 +124,11 @@ builder.Services.AddMassTransit(x =>
         cfg.ReceiveEndpoint("reporte-state-changed-event", e =>
         {
             e.ConfigureConsumer<ReporteStateChangedConsumer>(context);
+        });
+
+        cfg.ReceiveEndpoint("reporte-editado-evento", e =>
+        {
+            e.ConfigureConsumer<ReporteEditadoConsumidor>(context);
         });
 
         // Endpoint para la saga

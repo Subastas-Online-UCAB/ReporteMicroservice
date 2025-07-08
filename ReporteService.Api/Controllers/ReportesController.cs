@@ -31,7 +31,7 @@ namespace ReporteService.API.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(object), StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> CrearReporte([FromBody] CrearReporteCommand command)
+        public async Task<IActionResult> CrearReporte([FromForm] CrearReporteCommand command)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -106,6 +106,29 @@ namespace ReporteService.API.Controllers
 
             var result = await _mediator.Send(command);
             return result ? Ok("Estado actualizado correctamente.") : BadRequest("No se pudo actualizar el estado.");
+        }
+
+        [HttpPut("editar")]
+        public async Task<IActionResult> EditarReporte(Guid id, [FromForm] EditarReporteCommand command)
+        {
+            command.ReporteId = id; // Asignar el ID desde la ruta
+            var resultado = await _mediator.Send(command);
+            return resultado.Success ? Ok(resultado) : BadRequest(resultado);
+        }
+
+        [HttpDelete("eliminar/{id}")]
+        public async Task<IActionResult> Delete(Guid id, [FromQuery] Guid usuarioId)
+        {
+            var resultado = await _mediator.Send(new EliminarReporteCommand()
+            {
+                IdReporte = id,
+                IdUsuario = usuarioId
+            });
+
+            if (!resultado)
+                return NotFound();
+
+            return NoContent();
         }
 
 

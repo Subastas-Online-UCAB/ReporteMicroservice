@@ -26,6 +26,7 @@ namespace ReporteService.Infrastructure.Consumers
                 Descripcion = mensaje.Descripcion,
                 Estado = mensaje.Estado,
                 FechaCreacion = mensaje.FechaCreacion,
+                ImagenRuta = mensaje.ImagenRuta,
                 IdUsuario = mensaje.IdUsuario,
                 IdSubasta = mensaje.IdSubasta, 
             };

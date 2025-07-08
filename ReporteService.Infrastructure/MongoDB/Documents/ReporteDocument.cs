@@ -22,6 +22,9 @@ namespace ReporteService.Infrastructure.MongoDB.Documents
         [BsonElement("fechacreacion")]
         public DateTime FechaCreacion { get; set; }
 
+        [BsonElement("imagenRuta")]
+        public string ImagenRuta { get; set; }
+
         [BsonElement("idUsuario")]
         [BsonRepresentation(BsonType.String)]
         public Guid IdUsuario { get; set; }

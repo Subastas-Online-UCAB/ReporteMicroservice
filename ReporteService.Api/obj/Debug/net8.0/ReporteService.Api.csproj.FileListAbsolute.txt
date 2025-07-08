@@ -55,6 +55,7 @@ C:\Users\Xrixer\Documents\GitHub\ReporteMicroservice\ReporteService.Api\bin\Debu
 C:\Users\Xrixer\Documents\GitHub\ReporteMicroservice\ReporteService.Api\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\Xrixer\Documents\GitHub\ReporteMicroservice\ReporteService.Api\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
 C:\Users\Xrixer\Documents\GitHub\ReporteMicroservice\ReporteService.Api\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Xrixer\Documents\GitHub\ReporteMicroservice\ReporteService.Api\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
 C:\Users\Xrixer\Documents\GitHub\ReporteMicroservice\ReporteService.Api\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\Xrixer\Documents\GitHub\ReporteMicroservice\ReporteService.Api\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Xrixer\Documents\GitHub\ReporteMicroservice\ReporteService.Api\bin\Debug\net8.0\Microsoft.Identity.Client.dll
